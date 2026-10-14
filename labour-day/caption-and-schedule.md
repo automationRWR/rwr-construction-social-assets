@@ -1,6 +1,7 @@
 # RWR Construction Labour Day 2026
 
-- File: `labour-day/RC_LABOUR_DAY_2026_post.jpg` (1080x1350 JPEG)
+- Scheduled asset: `labour-day/RC_LABOUR_DAY_2026_reel.mp4` (1080x1920 reel, 9s, silent), Buffer post 6acf192d848c31c8095ffb29
+- Static version with logo kept: `labour-day/RC_LABOUR_DAY_2026_post_logo.jpg` (1080x1350)
 - Channel: Instagram, rwrconstruction
 - Scheduled: Monday 26 October 2026, 9:00am NZDT (Labour Day)
 

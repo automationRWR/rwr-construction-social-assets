@@ -1,6 +1,7 @@
 # RWR Construction blog promo: captions and schedule
 
 Channel: Construction Instagram (6acd7ac6778b240e2fefe5f7). All times NZDT. All 20 items scheduled in Buffer. Nothing unscheduled.
+Assets updated 14 Oct 2026 with brand logo (_logo files). Labour Day is now an animated reel (Buffer 6acf192d848c31c8095ffb29, Mon 26 Oct 09:00 NZDT), replacing the static post.
 
 | Row | Blog | Post (Buffer ID) | Reel (Buffer ID) |
 |---|---|---|---|
@@ -19,7 +20,7 @@ Note: row 14 post date has passed on the sheet so it moved forward; rows 15, 20,
 
 ## Row 14: Refresh Your Resume to Be Relevant in the Current Job Market
 Audience: Candidate
-Files: RC_BLOG_row14_refresh-resume_post.jpg, RC_BLOG_row14_refresh-resume_reel.mp4
+Files: RC_BLOG_row14_refresh-resume_post_logo.jpg, RC_BLOG_row14_refresh-resume_reel_logo.mp4
 
 ### Post caption
 ```
@@ -52,7 +53,7 @@ Lead with the headline in dark and pink type on white, above a flat CV graphic w
 
 ## Row 15: Reference Checking: Prep Your Referees and Stay Connected
 Audience: Candidate
-Files: RC_BLOG_row15_referee-prep_post.jpg, RC_BLOG_row15_referee-prep_reel.mp4
+Files: RC_BLOG_row15_referee-prep_post_logo.jpg, RC_BLOG_row15_referee-prep_reel_logo.mp4
 
 ### Post caption
 ```
@@ -85,7 +86,7 @@ Brief your referees in white type on a pink background, with a black and white c
 
 ## Row 19: Your Digital Footprint as a Candidate: How Does an Audit Stack Up?
 Audience: Candidate
-Files: RC_BLOG_row19_digital-footprint_post.jpg, RC_BLOG_row19_digital-footprint_reel.mp4
+Files: RC_BLOG_row19_digital-footprint_post_logo.jpg, RC_BLOG_row19_digital-footprint_reel_logo.mp4
 
 ### Post caption
 ```
@@ -118,7 +119,7 @@ They looked you up first in dark and pink type on white, above a pink magnifying
 
 ## Row 20: Building Leadership Bench Strength in Construction Businesses
 Audience: Client
-Files: RC_BLOG_row20_bench-strength_post.jpg, RC_BLOG_row20_bench-strength_reel.mp4
+Files: RC_BLOG_row20_bench-strength_post_logo.jpg, RC_BLOG_row20_bench-strength_reel_logo.mp4
 
 ### Post caption
 ```
@@ -150,7 +151,7 @@ Who steps up next in white type on a pink background, above a flat set of rising
 
 ## Row 21: Sharpen Your Interview Skills: Game-Changing Prep
 Audience: Candidate
-Files: RC_BLOG_row21_interview-prep_post.jpg, RC_BLOG_row21_interview-prep_reel.mp4
+Files: RC_BLOG_row21_interview-prep_post_logo.jpg, RC_BLOG_row21_interview-prep_reel_logo.mp4
 
 ### Post caption
 ```
@@ -184,7 +185,7 @@ Prep wins the room in dark and pink type on white, above a flat checklist with t
 
 ## Row 22: Why Strong Leaders Attract Strong Teams
 Audience: Thought leadership
-Files: RC_BLOG_row22_leaders-attract-teams_post.jpg, RC_BLOG_row22_leaders-attract-teams_reel.mp4
+Files: RC_BLOG_row22_leaders-attract-teams_post_logo.jpg, RC_BLOG_row22_leaders-attract-teams_reel_logo.mp4
 
 ### Post caption
 ```
@@ -216,7 +217,7 @@ People follow people in dark and pink type on white, with a black and white circ
 
 ## Row 23: Executive Careers in Construction: Balancing Delivery and Strategy
 Audience: Candidate
-Files: RC_BLOG_row23_executive-balance_post.jpg, RC_BLOG_row23_executive-balance_reel.mp4
+Files: RC_BLOG_row23_executive-balance_post_logo.jpg, RC_BLOG_row23_executive-balance_reel_logo.mp4
 
 ### Post caption
 ```
@@ -250,7 +251,7 @@ Delivery shouts, strategy waits in white type on pink, above a flat weekly grid 
 
 ## Row 24: Handle Underperformance Without Losing Good People
 Audience: Client
-Files: RC_BLOG_row24_underperformance_post.jpg, RC_BLOG_row24_underperformance_reel.mp4
+Files: RC_BLOG_row24_underperformance_post_logo.jpg, RC_BLOG_row24_underperformance_reel_logo.mp4
 
 ### Post caption
 ```
@@ -285,7 +286,7 @@ Act early, stay fair in dark and pink type on white, above a flat rising line wi
 
 ## Row 25: Candidates and Referees: Manage Your Brand and Expectations
 Audience: Candidate
-Files: RC_BLOG_row25_referees-brand_post.jpg, RC_BLOG_row25_referees-brand_reel.mp4
+Files: RC_BLOG_row25_referees-brand_post_logo.jpg, RC_BLOG_row25_referees-brand_reel_logo.mp4
 
 ### Post caption
 ```
@@ -320,7 +321,7 @@ One story, told three ways in white type on pink, above three overlapping rings 
 
 ## Row 26: Why Communication Style Matters When Appointing Construction Leaders
 Audience: Client
-Files: RC_BLOG_row26_communication-style_post.jpg, RC_BLOG_row26_communication-style_reel.mp4
+Files: RC_BLOG_row26_communication-style_post_logo.jpg, RC_BLOG_row26_communication-style_reel_logo.mp4
 
 ### Post caption
 ```
