@@ -1,0 +1,32 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="rc.css"></head><body class="reel">
+<section class="sc w" id="s1"><img class="lm" id="lm" src="a/logo_mark.png"><div class="lab" id="lab">CANDIDATE TIPS</div><div class="hl" id="h1" data-text="Brief your|[k]referees."></div></section>
+<section class="sc p" id="s2"><div id="art"></div><div class="sub" id="sb" data-text="A prepared referee|gives a useful answer."></div></section>
+<section class="sc p" id="s3"><div class="card" id="card"><img src="a/logo_full.png"></div><div class="cta" id="cta" data-text="Read|the blog."></div><div class="ctas" id="ctas">The full story is a tap away.</div><div class="pill" id="pill">Link in bio</div></section>
+<script>window.NO_CIRCLES=true;</script>
+<script src="lib.js"></script><script src="gfx.js"></script>
+<script>
+window.DURATION=11.5;
+function setup(){
+  document.getElementById('art').innerHTML='<svg viewBox="0 0 1080 620" style="width:1080px;height:620px;overflow:visible">'+GFX.refs(PAL.p)+'</svg>';
+  fit($('#h1'),900,70); fit($('#sb'),900,30);
+}
+function render(t){
+  if(scene($('#s1'),t,0,4.4)){
+    pop($('#lm'),t,.15,{d:.7});
+    rise($('#lab'),t,.5,{dy:40,d:.6});
+    words($('#h1'),t,.7,{st:.12,d:.7});
+  }
+  if(scene($('#s2'),t,3.7,8.6,{x:540,y:1750,d:.85})){
+    const root=document.getElementById('art');
+    $$('#art .e').forEach((el,i)=>{const p=P(t,4.2+i*.11,.65),k=E.back(p);el.style.opacity=cl(p*3);el.style.transform='scale('+k+')';});
+    
+    words($('#sb'),t,5.7,{st:.1,d:.65});
+  }
+  if(scene($('#s3'),t,8.1,11.6,{x:540,y:1750,d:.8})){
+    pop($('#card'),t,8.6,{d:.7});
+    words($('#cta'),t,9.0,{st:.12,d:.7});
+    rise($('#ctas'),t,9.6,{dy:30,d:.6});
+    pop($('#pill'),t,10.0,{d:.6});
+  }
+}
+</script></body></html>

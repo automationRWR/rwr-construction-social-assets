@@ -1,0 +1,42 @@
+@font-face{font-family:'Poppins';font-weight:300;src:url(a/poppins-latin-300-normal.woff2) format('woff2')}
+@font-face{font-family:'Poppins';font-weight:400;src:url(a/poppins-latin-400-normal.woff2) format('woff2')}
+@font-face{font-family:'Poppins';font-weight:500;src:url(a/poppins-latin-500-normal.woff2) format('woff2')}
+@font-face{font-family:'Poppins';font-weight:600;src:url(a/poppins-latin-600-normal.woff2) format('woff2')}
+:root{--pk:#E6007E;--ink:#1D1D1F;--grey:#6E6E73}
+*{box-sizing:border-box}
+html,body{margin:0;overflow:hidden;background:#fff;font-family:'Poppins',Arial,sans-serif;-webkit-font-smoothing:antialiased}
+.e{transform-box:fill-box;transform-origin:center}
+.lab{position:absolute;left:90px;font-size:26px;font-weight:500;letter-spacing:.2em;color:var(--pk);white-space:nowrap}
+.hl{position:absolute;left:90px;font-weight:600;letter-spacing:-.02em;line-height:1.05;color:var(--ink);white-space:nowrap}
+.hl .ln{display:block}
+.hl .k{color:var(--pk)}
+.sub{position:absolute;left:90px;font-weight:300;line-height:1.4;color:var(--grey);white-space:nowrap}
+.sub .ln{display:block}
+.wm{display:inline-block;overflow:hidden;vertical-align:top;padding:0 .04em .16em;margin-bottom:-.16em}
+.w{display:inline-block;will-change:transform}
+.p{background:var(--pk)}
+.p .lab,.p .hl,.p .hl .k,.p .sub{color:#fff}
+/* posts */
+body.post{width:1080px;height:1350px;position:relative}
+body.post .lab{top:96px}
+body.post .hl{top:770px;font-size:112px}
+body.post .sub{top:1085px;font-size:42px}
+#art{position:absolute;left:0;top:140px;width:1080px;height:620px}
+#art svg{width:1080px;height:620px;display:block;overflow:visible}
+.ph{position:absolute;border-radius:50%}
+/* reels */
+body.reel{width:1080px;height:1920px;position:relative}
+.sc{position:absolute;inset:0;overflow:hidden;display:none}
+.sc.w{background:#fff}
+.sc.p{background:var(--pk)}
+.lm{position:absolute;left:90px;top:330px;width:330px}
+body.reel .lab{top:720px;font-size:30px}
+body.reel .hl{top:800px;font-size:128px}
+body.reel #art{top:520px}
+body.reel .sub{top:1280px;font-size:58px;font-weight:400}
+.card{position:absolute;left:100px;top:420px;width:880px;height:360px;background:#fff;border-radius:52px}
+.card img{position:absolute;left:50px;top:55px;width:780px}
+.cta{position:absolute;left:90px;top:860px;font-size:112px;font-weight:600;letter-spacing:-.02em;line-height:1.05;color:#fff;white-space:nowrap}
+.cta .ln{display:block}
+.pill{position:absolute;left:90px;top:1250px;padding:28px 60px;border-radius:999px;font-size:42px;font-weight:500;background:#fff;color:var(--pk);white-space:nowrap}
+.ctas{position:absolute;left:90px;top:1135px;font-size:46px;font-weight:300;color:#fff;white-space:nowrap}
