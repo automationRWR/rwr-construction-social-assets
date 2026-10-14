@@ -18,10 +18,10 @@ html,body{margin:0;overflow:hidden;background:#fff;font-family:'Poppins',Arial,s
 .p .lab,.p .hl,.p .hl .k,.p .sub{color:#fff}
 /* posts */
 body.post{width:1080px;height:1350px;position:relative}
-body.post .lab{top:96px}
-body.post .hl{top:770px;font-size:112px}
-body.post .sub{top:1085px;font-size:42px}
-#art{position:absolute;left:0;top:140px;width:1080px;height:620px}
+body.post .lab{top:70px}
+body.post .hl{top:718px;font-size:112px}
+body.post .sub{top:1018px;font-size:42px}
+#art{position:absolute;left:0;top:105px;width:1080px;height:620px}
 #art svg{width:1080px;height:620px;display:block;overflow:visible}
 .ph{position:absolute;border-radius:50%}
 /* reels */
@@ -29,13 +29,12 @@ body.reel{width:1080px;height:1920px;position:relative}
 .sc{position:absolute;inset:0;overflow:hidden;display:none}
 .sc.w{background:#fff}
 .sc.p{background:var(--pk)}
-.lm{position:absolute;left:90px;top:330px;width:330px}
+.lm{position:absolute;left:90px;top:290px;width:420px}
 body.reel .lab{top:720px;font-size:30px}
 body.reel .hl{top:800px;font-size:128px}
 body.reel #art{top:520px}
 body.reel .sub{top:1280px;font-size:58px;font-weight:400}
-.card{position:absolute;left:100px;top:420px;width:880px;height:360px;background:#fff;border-radius:52px}
-.card img{position:absolute;left:50px;top:55px;width:780px}
+.lg{position:absolute;left:90px;top:470px;width:800px}
 .cta{position:absolute;left:90px;top:860px;font-size:112px;font-weight:600;letter-spacing:-.02em;line-height:1.05;color:#fff;white-space:nowrap}
 .cta .ln{display:block}
 .pill{position:absolute;left:90px;top:1250px;padding:28px 60px;border-radius:999px;font-size:42px;font-weight:500;background:#fff;color:var(--pk);white-space:nowrap}

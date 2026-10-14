@@ -1,0 +1,50 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="rc.css">
+<style>
+body{width:1080px;height:1920px;position:relative}
+.sc{position:absolute;inset:0;overflow:hidden;display:none}
+.c{position:absolute;left:0;width:1080px;text-align:center;white-space:nowrap}
+.sc.w{background:#fff}.sc.p{background:#E6007E}
+.lab2{font-size:40px;font-weight:400;color:#6E6E73;top:1110px}
+.h1{font-size:128px;font-weight:600;letter-spacing:-.02em;line-height:1.05;color:#1D1D1F;top:1180px}
+.h1 span{display:block}.h1 .k{color:#E6007E}
+.sb{font-size:40px;font-weight:300;color:#6E6E73;top:1480px}
+.tlogo{position:absolute;left:340px;top:90px;width:400px}
+svg.ic{position:absolute;left:290px;top:440px;width:500px;height:500px;overflow:visible}
+.elogo{position:absolute;left:140px;top:470px;width:800px}
+.eh{font-size:128px;font-weight:600;letter-spacing:-.02em;line-height:1.05;color:#fff;top:860px}
+.eh span{display:block}
+.es{font-size:46px;font-weight:300;color:#fff;top:1180px}
+.pill{position:absolute;left:50%;top:1290px;margin-left:-320px;width:640px;text-align:center;padding:28px 0;border-radius:999px;font-size:42px;font-weight:500;background:#fff;color:#E6007E;white-space:nowrap}
+</style></head><body>
+<section class="sc w" id="s1">
+<img class="tlogo" id="tl" src="a/logo_full.png">
+<svg class="ic" id="ic" viewBox="0 0 500 500"><circle id="ghost" cx="250" cy="250" r="230" fill="#F2F2F4"/><path id="wedge" fill="#E6007E"/><circle id="hub" cx="250" cy="250" r="16" fill="#fff"/><line id="hand" x1="250" y1="250" x2="250" y2="70" stroke="#fff" stroke-width="12" stroke-linecap="round"/></svg>
+<div class="c lab2" id="lb">Monday 26 October.</div>
+<div class="c h1" id="h"><span id="a">Happy</span><span class="k" id="b">Labour Day.</span></div>
+<div class="c sb" id="sb">Thanks to the people who build New Zealand.</div>
+</section>
+<section class="sc p" id="s2">
+<img class="elogo" id="el" src="a/logo_full_white.png">
+<div class="c eh" id="eh"><span id="e1">Happy</span><span id="e2">Labour Day.</span></div>
+<div class="c es" id="es">Thanks for building New Zealand.</div>
+<div class="pill" id="pill">Enjoy the long weekend</div>
+</section>
+<script>window.NO_CIRCLES=true;window.DURATION=9;</script>
+<script src="lib.js"></script>
+<script>
+function sector(k){const cx=250,cy=250,r=230,a0=0,a1=240*k*Math.PI/180;if(k<=0)return'';
+ const x1=cx+r*Math.sin(a1),y1=cy-r*Math.cos(a1);return `M${cx},${cy} L${cx},${cy-r} A${r},${r} 0 ${240*k>180?1:0} 1 ${x1},${y1} Z`;}
+function render(t){
+  if(scene($('#s1'),t,0,5.6)){
+    $('#tl').style.opacity=cl(P(t,.2,.7));
+    const ik=E.back(P(t,.3,.8));$('#ic').style.opacity=cl(P(t,.3,.4)*2);$('#ic').style.transform=`scale(${.9+.1*ik})`;
+    const k=E.io(P(t,.9,1.8));$('#wedge').setAttribute('d',sector(k));
+    $('#hand').setAttribute('transform',`rotate(${240*k} 250 250)`);
+    $('#hub').style.opacity=1;
+    rise($('#lb'),t,2.4,{dy:20,d:.7});rise($('#a'),t,2.7,{dy:36,d:.8});rise($('#b'),t,3.0,{dy:36,d:.8});rise($('#sb'),t,3.7,{dy:20,d:.8});
+  }
+  if(scene($('#s2'),t,5.0,9.1,{x:540,y:1100,d:.9})){
+    rise($('#el'),t,5.7,{dy:30,d:.9});rise($('#e1'),t,6.3,{dy:36,d:.8});rise($('#e2'),t,6.6,{dy:36,d:.8});rise($('#es'),t,7.2,{dy:20,d:.7});pop($('#pill'),t,7.6,{d:.6});
+  }
+}
+</script></body></html>

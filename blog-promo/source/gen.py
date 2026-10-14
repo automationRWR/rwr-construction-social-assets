@@ -42,7 +42,7 @@ def reel(it):
     html = f'''<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="rc.css"></head><body class="reel">
 <section class="sc w" id="s1"><img class="lm" id="lm" src="a/logo_mark.png"><div class="lab" id="lab">{lab}</div><div class="hl" id="h1" data-text="{h}"></div></section>
 <section class="sc p" id="s2"><div id="art"></div><div class="sub" id="sb" data-text="{s}"></div></section>
-<section class="sc p" id="s3"><div class="card" id="card"><img src="a/logo_full.png"></div><div class="cta" id="cta" data-text="Read|the blog."></div><div class="ctas" id="ctas">The full story is a tap away.</div><div class="pill" id="pill">Link in bio</div></section>
+<section class="sc p" id="s3"><img class="lg" id="card" src="a/logo_full_white.png"><div class="cta" id="cta" data-text="Read|the blog."></div><div class="ctas" id="ctas">The full story is a tap away.</div><div class="pill" id="pill">Link in bio</div></section>
 <script>window.NO_CIRCLES=true;</script>
 <script src="lib.js"></script><script src="gfx.js"></script>
 <script>

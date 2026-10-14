@@ -1,0 +1,46 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="rc.css">
+<style>
+body.ld{background:#E6007E;position:relative;color:#fff;width:1080px;height:1350px}body.ld.reel{height:1920px}
+.ld .lab{color:#fff;font-weight:600}
+.ld .h{position:absolute;left:90px;font-weight:600;letter-spacing:-.02em;line-height:1.05;font-size:144px;white-space:nowrap}
+.ld .h span,.ld .s span{display:block}
+.ld .s{position:absolute;left:90px;font-weight:300;font-size:42px;line-height:1.4;white-space:nowrap}
+.ld svg{position:absolute;overflow:visible}
+.ld .lg{position:absolute;left:60px;width:440px}
+</style></head><body class="ld">
+<div class="lab" id="lab">LABOUR DAY</div>
+<svg id="pie" width="500" height="500" viewBox="0 0 500 500"><path id="pp" fill="#fff"/></svg>
+<div class="h" id="h"><span id="h1">Happy</span><span id="h2">Labour Day.</span></div>
+<div class="s" id="s"><span id="s1">Thanks to the people</span><span id="s2">who build New Zealand.</span></div>
+<img class="lg" id="lg" src="a/logo_full_white.png">
+<script src="lib.js"></script>
+<script>
+const REEL=new URLSearchParams(location.search).get('m')==='reel';
+window.DURATION=REEL?8.5:1;
+function sector(k){ // white from 120deg clockwise, sweep 240*k
+  const cx=250,cy=250,r=250,a0=120*Math.PI/180,a1=(120+240*k)*Math.PI/180;
+  const pt=a=>[cx+r*Math.sin(a),cy-r*Math.cos(a)];
+  if(k<=0)return'';
+  const [x0,y0]=pt(a0),[x1,y1]=pt(a1);
+  const big=240*k>180?1:0;
+  return `M${cx},${cy} L${x0},${y0} A${r},${r} 0 ${big} 1 ${x1},${y1} Z`;
+}
+function layout(){
+  const o=REEL?{lab:500,pie:580,h:1130,s:1460,lg:1640}:{lab:62,pie:132,h:682,s:1022,lg:1350-60-118};
+  $('#lab').style.top=o.lab+'px';$('#lab').style.fontSize=REEL?'30px':'26px';
+  $('#pie').style.left='90px';$('#pie').style.top=o.pie+'px';
+  $('#h').style.top=o.h+'px';$('#s').style.top=o.s+'px';
+  $('#lg').style.top=o.lg+'px';$('#lg').style.width=REEL?'600px':'440px';
+}
+function setup(){if(REEL)document.body.classList.add('reel');layout();render(99);}
+function render(t){
+  if(!REEL){$('#pp').setAttribute('d',sector(1));return;}
+  rise($('#lab'),t,.3,{dy:30,d:.7});
+  const pk=E.io(P(t,.6,1.8));$('#pp').setAttribute('d',sector(pk));
+  $('#pie').style.opacity=cl(P(t,.4,.6)*1.5);
+  $('#pie').style.transform=`translateY(${(1-E.o3(P(t,.4,1.2)))*30}px) scale(${1+.015*Math.sin(t*.9)})`;
+  rise($('#h1'),t,2.3,{dy:50,d:.9});rise($('#h2'),t,2.7,{dy:50,d:.9});
+  rise($('#s1'),t,3.8,{dy:30,d:.8});rise($('#s2'),t,4.1,{dy:30,d:.8});
+  rise($('#lg'),t,5.3,{dy:20,d:1.0});
+}
+</script></body></html>
