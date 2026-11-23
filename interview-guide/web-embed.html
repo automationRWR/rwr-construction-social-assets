@@ -1,0 +1,217 @@
+<!-- rwig interview guide (RWR Construction) start -->
+<div id="rwig" data-brand="rc">
+<style>
+#rwig{--c:#E6007E;--d:#8a004c;--t:#FDE6F2;font-family:'Poppins',Arial,sans-serif!important;color:#222;background:#fff;text-align:left;overflow-anchor:none;-webkit-font-smoothing:antialiased}
+#rwig *,#rwig *::before,#rwig *::after{box-sizing:border-box;font-family:'Poppins',Arial,sans-serif!important}
+#rwig h1,#rwig h2,#rwig h3,#rwig p,#rwig ul,#rwig li,#rwig figure{margin:0;padding:0;text-align:left;letter-spacing:normal;text-transform:none}
+#rwig a{text-decoration:none!important}
+#rwig .rwig-wrap{max-width:1240px;margin:0 auto;padding:0 40px;width:100%}
+#rwig .rwig-narrow{max-width:960px}
+#rwig .rwig-hero{background:var(--c) url("https://irp.cdn-website.com/fa0157c9/dms3rep/multi/opt/Untitled+design-9585069a-2880w.png") center/cover no-repeat;min-height:520px;padding:141px 0 48px;color:#fff;display:flex;align-items:center}
+#rwig .rwig-heroin{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.9fr);gap:48px;align-items:center}
+#rwig .rwig-hk{display:block;font-size:12px;font-weight:600;letter-spacing:1.8px;text-transform:uppercase;color:#fff;margin-bottom:12px}
+#rwig .rwig-hero h1{font-size:48px!important;font-weight:700!important;line-height:1.06!important;letter-spacing:-1.6px!important;color:#fff!important}
+#rwig .rwig-lede{margin-top:18px!important;font-size:18px;font-weight:500;line-height:1.55;color:#fff!important;max-width:560px}
+#rwig .rwig-acts{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+#rwig .rwig-btnw,#rwig .rwig-btnl,#rwig .rwig-btnc{display:inline-flex;align-items:center;gap:10px;min-height:52px;padding:0 24px;border-radius:999px;font-size:15px!important;font-weight:600!important;line-height:1;cursor:pointer;transition:transform .15s ease,box-shadow .15s ease}
+#rwig .rwig-btnw{background:#fff!important;color:var(--d)!important}
+#rwig .rwig-btnl{box-shadow:inset 0 0 0 2px #fff;color:#fff!important;background:transparent!important}
+#rwig .rwig-btnc{background:var(--c)!important;color:#fff!important}
+#rwig .rwig-btnw:hover,#rwig .rwig-btnl:hover,#rwig .rwig-btnc:hover{transform:translateY(-2px)}
+#rwig .rwig-hcard{background:#fff;border-radius:20px;padding:32px;box-shadow:0 20px 50px -14px rgba(0,0,0,.3);max-width:420px;width:100%;justify-self:end;color:#111}
+#rwig .rwig-k2{display:block;font-size:12px;font-weight:600;letter-spacing:1.6px;text-transform:uppercase;color:#444;margin-bottom:10px}
+#rwig .rwig-hcard b{display:block;font-size:24px;font-weight:700;letter-spacing:-.5px;line-height:1.25;color:#111}
+#rwig .rwig-hcard b span{color:var(--c)}
+#rwig .rwig-hcard p{font-size:14.5px;line-height:1.6;color:#444;margin:10px 0 20px}
+#rwig .rwig-pills{position:relative;z-index:2;margin-top:-26px}
+#rwig .rwig-pillrow{display:flex;gap:8px;overflow-x:auto;padding:10px;background:#fff;border-radius:999px;box-shadow:0 14px 40px -16px rgba(0,0,0,.25);scrollbar-width:none}
+#rwig .rwig-pillrow::-webkit-scrollbar{display:none}
+#rwig .rwig-pillrow a{flex:0 0 auto;padding:10px 16px;border-radius:999px;font-size:14px;font-weight:600;color:#222!important;background:#f4f4f4;white-space:nowrap}
+#rwig .rwig-pillrow a:hover,#rwig .rwig-pillrow a.is-on{background:var(--c);color:#fff!important}
+#rwig .rwig-sec{padding-top:88px;scroll-margin-top:110px}
+#rwig .rwig-k{display:block;font-size:12px;font-weight:600;letter-spacing:1.8px;text-transform:uppercase;color:#444;margin:0 0 10px}
+#rwig .rwig-h2{font-size:36px!important;font-weight:700!important;line-height:1.15!important;letter-spacing:-1px!important;color:#111!important;margin:0 0 22px!important}
+#rwig .rwig-h2 span,#rwig .rwig-end h2 span,#rwig .rwig-starh h3 span{color:var(--c)}
+#rwig .rwig-p{font-size:16px;line-height:1.7;color:#333;margin:0 0 16px!important}
+#rwig .rwig-p b{color:#111}
+#rwig .rwig-h3{display:flex;align-items:center;gap:10px;font-size:18px!important;font-weight:700!important;color:#111!important;margin:28px 0 12px!important}
+#rwig .rwig-h3 i{width:12px;height:12px;border-radius:50%;background:var(--c);flex:0 0 12px}
+#rwig .rwig-ul{list-style:none!important;display:flex;flex-direction:column;gap:10px;margin:0 0 8px!important}
+#rwig .rwig-ul li{position:relative;padding-left:22px;font-size:15.5px;line-height:1.6;color:#333;list-style:none!important}
+#rwig .rwig-ul li::before{content:"";position:absolute;left:0;top:9px;width:9px;height:9px;border-radius:50%;background:var(--c)}
+#rwig .rwig-ul.is-white li{color:#fff}
+#rwig .rwig-ul.is-white li::before{background:#fff}
+#rwig .rwig-split{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:56px;align-items:center;margin-bottom:40px}
+#rwig .rwig-split.is-left .rwig-col{order:2}
+#rwig .rwig-ph{position:relative;width:100%;aspect-ratio:4/3;border-radius:28px;overflow:visible}
+#rwig .rwig-ph img{width:100%;height:100%;object-fit:cover;border-radius:28px;display:block}
+#rwig .rwig-dot{position:absolute;width:84px;height:84px;border-radius:50%;background:var(--c);border:6px solid #fff;right:-18px;bottom:-22px}
+#rwig .rwig-ph.is-left .rwig-dot{right:auto;left:-18px}
+#rwig .rwig-tips{display:flex;gap:18px;align-items:flex-start;background:var(--t);border-radius:22px;padding:22px 26px;margin:24px 0 0}
+#rwig .rwig-tag{flex:0 0 auto;background:var(--c);color:#fff;border-radius:999px;padding:6px 14px;font-size:12px;font-weight:700;letter-spacing:1.4px}
+#rwig .rwig-tips .rwig-ul{margin:0!important}
+#rwig .rwig-key{display:flex;align-items:center;gap:14px;background:var(--c);color:#fff;border-radius:999px;padding:10px 26px 10px 10px;margin:24px 0 0;width:fit-content;max-width:100%}
+#rwig .rwig-keyic{flex:0 0 36px;width:36px;height:36px;border-radius:50%;background:#fff;color:var(--c);display:flex;align-items:center;justify-content:center}
+#rwig .rwig-keyk{font-size:11px;font-weight:700;letter-spacing:2px}
+#rwig .rwig-keyt{font-size:15.5px;font-weight:600;line-height:1.35}
+#rwig .rwig-stat{display:flex;align-items:center;gap:26px;background:var(--c);color:#fff;border-radius:24px;padding:24px 30px;margin:8px 0 22px}
+#rwig .rwig-stat>b{font-size:46px;font-weight:700;line-height:1;white-space:nowrap}
+#rwig .rwig-stat>span{font-size:16px;line-height:1.5;color:#fff;min-width:0;max-width:100%}
+#rwig .rwig-stat>span b{font-weight:700;color:#fff}
+#rwig .rwig-bigstat{display:flex;align-items:center;gap:22px;background:var(--t);border-radius:22px;padding:20px 26px;margin:6px 0 20px}
+#rwig .rwig-bigstat>b{font-size:44px;font-weight:700;line-height:1;color:var(--c);white-space:nowrap}
+#rwig .rwig-bigstat>span{font-size:15.5px;line-height:1.55;color:#333;min-width:0;max-width:100%}
+#rwig .rwig-card{background:#fff;border-radius:20px;padding:24px 26px;box-shadow:0 18px 44px -18px rgba(0,0,0,.22);border:1px solid #eee;margin:20px 0 0}
+#rwig .rwig-card .rwig-h3{margin-top:0!important}
+#rwig .rwig-two{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:6px}
+#rwig .rwig-two .rwig-card{margin-top:14px}
+#rwig .rwig-golden{background:var(--c);color:#fff;border-radius:22px;padding:22px 28px;margin:22px 0 0}
+#rwig .rwig-gk{font-size:11px;font-weight:700;letter-spacing:2px}
+#rwig .rwig-golden p{font-size:21px;font-weight:400;line-height:1.35;color:#fff;margin-top:6px!important}
+#rwig .rwig-golden p span{font-weight:700}
+#rwig .rwig-impress{display:grid;grid-template-columns:auto minmax(0,1fr);gap:28px;align-items:center;margin:26px 0 0}
+#rwig .rwig-rings{display:flex;gap:14px}
+#rwig .rwig-ring{width:140px;height:140px;border-radius:50%;border:3px solid var(--c);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:10px}
+#rwig .rwig-ring b{font-size:30px;font-weight:700;line-height:1;color:var(--c)}
+#rwig .rwig-ring span{font-size:11.5px;line-height:1.3;color:#444;margin-top:5px}
+#rwig .rwig-ring.is-fill{background:var(--c);border-color:var(--c)}
+#rwig .rwig-ring.is-fill b,#rwig .rwig-ring.is-fill span{color:#fff}
+#rwig .rwig-impress .rwig-p{margin:0!important}
+#rwig .rwig-three{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin:24px 0 0;align-items:start}
+#rwig .rwig-q{background:var(--c);color:#fff;border-radius:24px;padding:24px 22px}
+#rwig .rwig-q h3{font-size:20px!important;font-weight:700!important;color:#fff!important;line-height:1.15!important;margin-bottom:10px!important}
+#rwig .rwig-q h3 span{font-weight:300}
+#rwig .rwig-q p{font-size:14.5px;line-height:1.6;color:#fff;margin-bottom:10px!important}
+#rwig .rwig-q .rwig-ul li{font-size:14px}
+#rwig .rwig-star{margin:40px 0 0}
+#rwig .rwig-starh{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 16px;margin-bottom:16px}
+#rwig .rwig-starh h3{font-size:26px!important;font-weight:700!important;color:#111!important;letter-spacing:-.5px}
+#rwig .rwig-starh p{font-size:14.5px;color:#555}
+#rwig .rwig-four{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+#rwig .rwig-starc{all:unset;box-sizing:border-box;display:grid;grid-template-columns:auto 1fr auto;align-items:center;column-gap:10px;row-gap:10px;background:var(--t);border-radius:20px;padding:18px;cursor:pointer;transition:transform .15s ease,background .15s ease}
+#rwig .rwig-starc:hover,#rwig .rwig-starc:focus-visible{transform:translateY(-3px);outline:2px solid var(--c);outline-offset:2px}
+#rwig .rwig-sl{font-size:36px;font-weight:700;line-height:1;color:var(--c)}
+#rwig .rwig-sw{font-size:16px;font-weight:700;color:#111}
+#rwig .rwig-sp{font-size:12px;font-weight:700;color:#555}
+#rwig .rwig-sd{grid-column:1/-1;font-size:14px;line-height:1.5;color:#333}
+#rwig .rwig-bar{grid-column:1/-1;height:6px;border-radius:6px;background:#fff;overflow:hidden}
+#rwig .rwig-bar i{display:block;height:100%;background:var(--c);border-radius:6px}
+#rwig .rwig-email{background:var(--t);border-radius:22px;padding:22px 26px;margin:6px 0 4px}
+#rwig .rwig-emailt{font-size:15.5px;line-height:1.65;font-style:italic;color:#222}
+#rwig .rwig-emailf{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px;margin-top:14px}
+#rwig .rwig-emailf span{font-size:14.5px;font-weight:600;color:#111}
+#rwig .rwig-copy{all:unset;box-sizing:border-box;cursor:pointer;background:var(--c);color:#fff;border-radius:999px;padding:10px 18px;font-size:14px;font-weight:600}
+#rwig .rwig-copy.is-done{background:#111}
+#rwig .rwig-flow{margin:30px 0 0}
+#rwig .rwig-flowq{background:var(--c);color:#fff;border-radius:999px;padding:16px 26px;text-align:center!important;font-size:17px;font-weight:700;max-width:520px;margin:0 auto 16px}
+#rwig .rwig-yes,#rwig .rwig-no{border-radius:24px;padding:24px 26px;position:relative}
+#rwig .rwig-yes{background:var(--c);color:#fff}
+#rwig .rwig-no{border:3px solid var(--c);color:#222}
+#rwig .rwig-yn{display:inline-block;font-size:12px;font-weight:700;letter-spacing:1.8px;padding:5px 12px;border-radius:999px;margin-bottom:12px}
+#rwig .rwig-yes .rwig-yn{background:#fff;color:var(--d)}
+#rwig .rwig-no .rwig-yn{background:var(--c);color:#fff}
+#rwig .rwig-yes h3,#rwig .rwig-no h3{font-size:22px!important;font-weight:700!important;line-height:1.2!important;margin-bottom:8px!important;color:inherit!important}
+#rwig .rwig-yes p,#rwig .rwig-no p{font-size:15px;line-height:1.6;color:inherit}
+#rwig .rwig-prog{display:flex;align-items:center;gap:16px;margin:8px 0 18px}
+#rwig .rwig-progt{font-size:14.5px;color:#444;white-space:nowrap}
+#rwig .rwig-progt b{color:var(--c);font-weight:700}
+#rwig .rwig-progb{flex:1;height:8px;border-radius:8px;background:#eee;overflow:hidden}
+#rwig .rwig-progb i{display:block;height:100%;width:0;background:var(--c);border-radius:8px;transition:width .3s ease}
+#rwig .rwig-reset{all:unset;cursor:pointer;font-size:13.5px;font-weight:600;color:#555;text-decoration:underline}
+#rwig .rwig-chks{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+#rwig .rwig-chk{display:flex;gap:14px;align-items:flex-start;background:var(--t);border-radius:20px;padding:18px 20px;cursor:pointer;position:relative;transition:transform .15s ease}
+#rwig .rwig-chk:hover{transform:translateY(-2px)}
+#rwig .rwig-chk input{position:absolute;opacity:0;width:1px;height:1px}
+#rwig .rwig-box{flex:0 0 26px;width:26px;height:26px;border-radius:8px;border:3px solid var(--c);background:#fff;position:relative;margin-top:1px}
+#rwig .rwig-chk input:checked+.rwig-box{background:var(--c)}
+#rwig .rwig-chk input:checked+.rwig-box::after{content:"";position:absolute;left:6px;top:2px;width:7px;height:12px;border:solid #fff;border-width:0 3px 3px 0;transform:rotate(45deg)}
+#rwig .rwig-chk input:focus-visible+.rwig-box{outline:2px solid var(--c);outline-offset:3px}
+#rwig .rwig-ct{font-size:15px;line-height:1.5;font-weight:500;color:#222}
+#rwig .rwig-chk input:checked~.rwig-ct{color:#666}
+#rwig .rwig-end{padding:88px 0 96px}
+#rwig .rwig-endin{background:var(--c) url("https://irp.cdn-website.com/fa0157c9/dms3rep/multi/opt/Untitled+design-9585069a-2880w.png") center/cover no-repeat;border-radius:32px;padding:44px 48px;color:#fff;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:32px;align-items:center}
+#rwig .rwig-end h2{font-size:32px!important;font-weight:700!important;line-height:1.15!important;letter-spacing:-.8px!important;color:#fff!important}
+#rwig .rwig-end h2 span{color:#fff;font-weight:300}
+#rwig .rwig-end p{font-size:16px;line-height:1.6;color:#fff;margin-top:12px!important;max-width:560px}
+#rwig .rwig-end .rwig-acts{margin-top:0;flex-direction:column;align-items:stretch}
+#rwig .rwig-end .rwig-acts a{justify-content:center}
+@media (max-width:1000px){
+ #rwig .rwig-heroin{grid-template-columns:1fr;gap:28px}
+ #rwig .rwig-hcard{justify-self:start}
+ #rwig .rwig-three{grid-template-columns:1fr}
+ #rwig .rwig-four{grid-template-columns:repeat(2,minmax(0,1fr))}
+ #rwig .rwig-endin{grid-template-columns:1fr}
+ #rwig .rwig-end .rwig-acts{flex-direction:row;flex-wrap:wrap}
+}
+@media (max-width:767px){
+ #rwig .rwig-wrap{padding:0 20px}
+ #rwig .rwig-hero{min-height:0;padding:120px 0 56px}
+ #rwig .rwig-hero h1{font-size:36px!important;letter-spacing:-1px!important}
+ #rwig .rwig-lede{font-size:16px}
+ #rwig .rwig-hcard{padding:24px}
+ #rwig .rwig-sec{padding-top:64px}
+ #rwig .rwig-h2{font-size:28px!important}
+ #rwig .rwig-split{grid-template-columns:1fr;gap:28px}
+ #rwig .rwig-split.is-left .rwig-col{order:0}
+ #rwig .rwig-dot{width:60px;height:60px;right:-6px;bottom:-14px}
+ #rwig .rwig-ph.is-left .rwig-dot{left:-6px}
+ #rwig .rwig-two,#rwig .rwig-chks{grid-template-columns:1fr}
+ #rwig .rwig-tips{flex-direction:column;gap:12px;padding:20px}
+ #rwig .rwig-key{border-radius:22px;padding:12px 18px 12px 12px;flex-wrap:wrap}
+ #rwig .rwig-stat,#rwig .rwig-bigstat{flex-direction:column;align-items:flex-start;gap:10px}
+ #rwig .rwig-impress{grid-template-columns:1fr}
+ #rwig .rwig-ring{width:120px;height:120px}
+ #rwig .rwig-ring b{font-size:26px}
+ #rwig .rwig-four{grid-template-columns:1fr}
+ #rwig .rwig-flowq{border-radius:22px;font-size:16px}
+ #rwig .rwig-prog{flex-wrap:wrap}
+ #rwig .rwig-progb{flex-basis:100%;order:3}
+ #rwig .rwig-endin{padding:32px 24px;border-radius:26px}
+ #rwig .rwig-end h2{font-size:26px!important}
+ #rwig .rwig-end .rwig-acts{flex-direction:column}
+}
+@media (prefers-reduced-motion:reduce){#rwig *{transition:none!important}}
+</style>
+<header class="rwig-hero"><div class="rwig-wrap rwig-heroin">
+ <div class="rwig-herol"><span class="rwig-hk">SENIOR INTERVIEW GUIDE</span><h1>Make your<br>next move.</h1><p class="rwig-lede">Insight from the RWR Construction team to help experienced construction and infrastructure leaders prepare with purpose, perform with confidence and secure their next senior appointment.</p>
+  <div class="rwig-acts"><a class="rwig-btnw" href="https://cdn.jsdelivr.net/gh/automationRWR/rwr-construction-social-assets@da4a23cedd9230ab8bb647117aaf2ce364770407/interview-guide/rwr-construction-senior-interview-guide.pdf" target="_blank" rel="noopener" data-rwig-dl><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"></path><path d="m7 10 5 5 5-5"></path><path d="M5 21h14"></path></svg>Download the PDF</a><a class="rwig-btnl" href="#rwig-before-you-begin">Start reading</a></div></div>
+ <div class="rwig-hcard"><span class="rwig-k2">FREE DOWNLOAD</span><b>The full guide, <span>ready to print.</span></b><p>All 11 pages as a PDF, including the senior candidate checklist.</p><a class="rwig-btnc" href="https://cdn.jsdelivr.net/gh/automationRWR/rwr-construction-social-assets@da4a23cedd9230ab8bb647117aaf2ce364770407/interview-guide/rwr-construction-senior-interview-guide.pdf" target="_blank" rel="noopener" data-rwig-dl><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"></path><path d="m7 10 5 5 5-5"></path><path d="M5 21h14"></path></svg>Download the guide</a></div>
+</div></header>
+<nav class="rwig-pills" aria-label="Guide sections"><div class="rwig-wrap"><div class="rwig-pillrow"><a href="#rwig-before-you-begin">Before you begin</a><a href="#rwig-research">Research and preparation</a><a href="#rwig-presence">Executive presence</a><a href="#rwig-interview-day">Interview day</a><a href="#rwig-after-the-interview">After the interview</a><a href="#rwig-not-a-yes">When it's not a yes</a><a href="#rwig-checklist">Checklist</a></div></div></nav>
+<section class="rwig-sec" id="rwig-before-you-begin"><div class="rwig-wrap"><div class="rwig-split "><div class="rwig-col"><span class="rwig-k">01 · BEFORE YOU BEGIN</span><h2 class="rwig-h2">The shortlist is <span>yours to win.</span></h2><p class="rwig-p">Reaching interview for a senior appointment is an achievement in itself. At this level, shortlists are small and every candidate is credible on paper, so the interview becomes the deciding factor.</p><p class="rwig-p">Experienced professionals can be tempted to let their track record speak for itself. The candidates who secure senior roles treat the interview as a strategic exercise: they research in depth, articulate their impact with clarity and assess the organisation as rigorously as it assesses them.</p></div><figure class="rwig-ph "><img src="https://cdn.jsdelivr.net/gh/automationRWR/rwr-construction-social-assets@da4a23cedd9230ab8bb647117aaf2ce364770407/interview-guide/intro.jpg" alt="" loading="lazy" decoding="async" width="1400" height="933"><i class="rwig-dot"></i></figure></div><div class="rwig-stat"><b>Two-way</b><span>At senior level, the interview is a mutual assessment. <b>You are evaluating them as closely as they are evaluating you.</b></span></div><p class="rwig-p">The sections that follow distil what we see from the other side of the table, so you can walk in prepared, composed and ready to lead the conversation.</p></div></section><section class="rwig-sec" id="rwig-research"><div class="rwig-wrap"><div class="rwig-split is-left"><div class="rwig-col"><span class="rwig-k">02 · RESEARCH AND PREPARATION</span><h2 class="rwig-h2">Know the <span>organisation.</span></h2><p class="rwig-p">Senior candidates are judged on how quickly they could add value, so preparation needs to go well beyond the website. Build a clear picture of the organisation's strategy, performance, leadership and challenges, and where this role fits within them.</p><p class="rwig-p">Use what you learn to shape your answers rather than to recite it. Interviewers want to see that you understand their context and can speak credibly about the priorities you would bring to the role.</p></div><figure class="rwig-ph is-left"><img src="https://cdn.jsdelivr.net/gh/automationRWR/rwr-construction-social-assets@da4a23cedd9230ab8bb647117aaf2ce364770407/interview-guide/prep.jpg" alt="" loading="lazy" decoding="async" width="1400" height="933"><i class="rwig-dot"></i></figure></div><h3 class="rwig-h3"><i></i>Where to start</h3><ul class="rwig-ul"><li>Annual reports, strategy documents and recent announcements.</li><li>Current and pipeline projects, key clients and the sectors the business delivers in.</li><li>Market conditions affecting the business: procurement trends, funding cycles and competitor activity.</li><li>The leadership team and board, including their backgrounds and recent appointments.</li><li>Your recruiter's briefing on the role, the reporting line, the team and why the position is open.</li></ul><div class="rwig-tips"><span class="rwig-tag">TIPS</span><ul class="rwig-ul"><li>Map the role to the business. Identify two or three priorities you would focus on in your first six months.</li><li>Confirm the format in advance: who is on the panel, and whether a presentation or case study is expected.</li><li>Keep it professional. Hold off on LinkedIn connection requests to your interviewers until the process is complete.</li></ul></div><div class="rwig-key"><span class="rwig-keyic"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7.5"></circle><path d="m20.5 20.5-4.2-4.2"></path></svg></span><span class="rwig-keyk">KEY</span><span class="rwig-keyt">Understand the strategy, not just the services.</span></div></div></section><section class="rwig-sec" id="rwig-presence"><div class="rwig-wrap"><div class="rwig-split "><div class="rwig-col"><span class="rwig-k">03 · EXECUTIVE PRESENCE</span><h2 class="rwig-h2">Presence <span>speaks first.</span></h2><p class="rwig-p">At senior level, the way you present is read as a signal of how you lead. Your preparation, composure and judgement are on show before you answer a single question. Presence is not polish for its own sake: it is giving the panel confidence that you would represent their organisation well, with their people, their partners and their board.</p></div><figure class="rwig-ph "><img src="https://cdn.jsdelivr.net/gh/automationRWR/rwr-construction-social-assets@da4a23cedd9230ab8bb647117aaf2ce364770407/interview-guide/presence.jpg" alt="" loading="lazy" decoding="async" width="1400" height="933"><i class="rwig-dot"></i></figure></div><div class="rwig-two"><div class="rwig-card"><h3 class="rwig-h3"><i></i>How you show up</h3><ul class="rwig-ul"><li>Be composed and unhurried. A considered pause reads as judgement, not hesitation.</li><li>Listen fully, then answer the question that was asked.</li><li>Read the room. Match the panel's style and adjust your level of detail.</li></ul></div><div class="rwig-card"><h3 class="rwig-h3"><i></i>What to wear</h3><ul class="rwig-ul"><li>Dress for the role. Corporate and client-facing positions call for business attire. If a site visit is part of the process, ask what to bring.</li><li>Coming from site? Let the interviewer know in advance and allow time to change.</li><li>Keep accessories understated and grooming immaculate. The detail is noticed.</li><li>Prepare everything the day before: outfit, documents, directions and any presentation materials.</li><li>For video interviews, test your camera, lighting, sound and background, and dress exactly as you would in person.</li></ul></div></div><div class="rwig-tips"><span class="rwig-tag">TIPS</span><ul class="rwig-ul"><li>Senior networks are smaller than they appear. Your presence is part of your professional reputation.</li><li>Be yourself. If the culture or values aren't right for you, the interview is the place to find out.</li><li>Speak about your team with generosity. How you describe others says a great deal about how you lead.</li></ul></div><div class="rwig-golden"><span class="rwig-gk">GOLDEN RULE</span><p>Present as the leader <span>they are looking to appoint.</span></p></div></div></section><section class="rwig-sec" id="rwig-interview-day"><div class="rwig-wrap"><div class="rwig-split is-left"><div class="rwig-col"><span class="rwig-k">04 · INTERVIEW DAY</span><h2 class="rwig-h2">Set the <span>tone early.</span></h2><p class="rwig-p">Approach the interview as a conversation between peers. The panel is testing your capability, judgement and fit; you are testing the organisation's direction, culture and leadership. Bring confidence and genuine curiosity in equal measure.</p><p class="rwig-p">Expect a structured process. Senior appointments often involve several stages, including panel interviews, presentations, psychometric assessments and meetings with executives or board members. Ask your recruiter to brief you on each one.</p></div><figure class="rwig-ph is-left"><img src="https://cdn.jsdelivr.net/gh/automationRWR/rwr-construction-social-assets@da4a23cedd9230ab8bb647117aaf2ce364770407/interview-guide/day.jpg" alt="" loading="lazy" decoding="async" width="1400" height="933"><i class="rwig-dot"></i></figure></div><div class="rwig-card"><h3 class="rwig-h3"><i></i>Getting started</h3><ul class="rwig-ul"><li>Arrive five to ten minutes early, composed and ready. Allow extra time for parking and building security.</li><li>Bring printed copies of your CV, any presentation material and a short list of questions.</li></ul></div><div class="rwig-impress"><div class="rwig-rings"><div class="rwig-ring is-fill"><b>7 sec</b><span>to form a first impression</span></div><div class="rwig-ring"><b>90 min</b><span>to change it</span></div></div><p class="rwig-p"><b>First impressions are formed quickly.</b> Within moments, a panel is reading your confidence, warmth and composure. Greet each panel member by name, make eye contact and offer a firm handshake. How you open the conversation signals how you would engage with stakeholders in the role.</p></div><div class="rwig-key"><span class="rwig-keyic"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7.5"></circle><path d="m20.5 20.5-4.2-4.2"></path></svg></span><span class="rwig-keyk">KEY</span><span class="rwig-keyt">Approach the conversation as a peer.</span></div><div class="rwig-tips"><span class="rwig-tag">TIPS</span><ul class="rwig-ul"><li>Have a concise two-minute summary of your career ready. It is often the first question, and it frames everything that follows.</li><li>If you are presenting, rehearse to time and be ready for challenge on your assumptions.</li><li>Treat everyone you meet with the same respect, from reception to the chief executive. Impressions are shared.</li></ul></div></div></section><section class="rwig-sec" id="rwig-evidence"><div class="rwig-wrap rwig-narrow"><span class="rwig-k">04 · INTERVIEW DAY CONTINUED</span><h2 class="rwig-h2">Lead with <span>evidence.</span></h2><p class="rwig-p">Senior interviews move quickly beyond your CV to how you think, lead and deliver. Expect probing follow-up questions designed to test the depth of your experience.</p><p class="rwig-p">Be candid. If you don't know an answer, say so and explain how you would find out. Credibility matters more than having every answer.</p><p class="rwig-p">Prepare five or six strong examples that show your leadership range: leading change, managing risk, building teams, delivering results and handling difficult stakeholders. Quantify your impact wherever you can.</p><div class="rwig-three"><div class="rwig-q"><h3>Behavioural <span>questions</span></h3><p>These explore how you have actually led. Expect "Tell me about a time you led a team through significant change" or "Give me an example of a difficult decision made with incomplete information."</p></div><div class="rwig-q"><h3>Strategic <span>questions</span></h3><p>These test your judgement and thinking at the level of the role, such as "How would you approach your first 90 days?" or "What would you do if a flagship project fell significantly behind programme and budget?"</p></div><div class="rwig-q"><h3>Motivation <span>questions</span></h3><p>Questions about you and your reasons for the move, such as:</p><ul class="rwig-ul is-white"><li>Why this role, and why now?</li><li>How would your team describe your leadership?</li><li>What would you do differently from your predecessor?</li></ul></div></div><div class="rwig-star"><div class="rwig-starh"><h3>Use the <span>STAR technique.</span></h3><p>A clear structure for leadership examples.</p></div><div class="rwig-four"><button type="button" class="rwig-starc" aria-expanded="false"><span class="rwig-sl">S</span><span class="rwig-sw">Situation</span><span class="rwig-sp">~20%</span><span class="rwig-sd">The context, scale and stakes.</span><span class="rwig-bar"><i style="width:20%"></i></span></button><button type="button" class="rwig-starc" aria-expanded="false"><span class="rwig-sl">T</span><span class="rwig-sw">Task</span><span class="rwig-sp">~10%</span><span class="rwig-sd">Your accountability and the challenge you faced.</span><span class="rwig-bar"><i style="width:10%"></i></span></button><button type="button" class="rwig-starc" aria-expanded="false"><span class="rwig-sl">A</span><span class="rwig-sw">Action</span><span class="rwig-sp">~60%</span><span class="rwig-sd">The decisions you made and why. Say "I", not "we".</span><span class="rwig-bar"><i style="width:60%"></i></span></button><button type="button" class="rwig-starc" aria-expanded="false"><span class="rwig-sl">R</span><span class="rwig-sw">Result</span><span class="rwig-sp">~10%</span><span class="rwig-sd">The measurable outcome and what you learned.</span><span class="rwig-bar"><i style="width:10%"></i></span></button></div></div></div></section><section class="rwig-sec" id="rwig-close"><div class="rwig-wrap rwig-narrow"><span class="rwig-k">04 · INTERVIEW DAY CONTINUED</span><h2 class="rwig-h2">Close with <span>impact.</span></h2><p class="rwig-p">A good interviewer will guide the conversation, but at senior level you are also expected to steer it with substance. Make sure the panel leaves with a clear picture of the value you would bring.</p><p class="rwig-p">Your questions are part of the assessment. They show how you think, what you prioritise and how seriously you are weighing the move.</p><div class="rwig-bigstat"><b>3–5</b><span>considered questions is ideal. Ask what success looks like in the first 12 months, the challenges facing the team and how the leadership team works together.</span></div><ul class="rwig-ul"><li>Be prepared to discuss remuneration, but let the organisation raise it first. Your recruiter can manage the detail of the package on your behalf.</li><li>Remember that you are assessing them too. A senior move is a significant decision, so gather what you need to make the right one.</li></ul><p class="rwig-p">Close by summarising your interest and fit in a sentence or two, thank the panel for their time and confirm the next steps.</p><div class="rwig-tips"><span class="rwig-tag">TIPS</span><ul class="rwig-ul"><li>Switch your phone off completely.</li><li>Keep notes brief and refer to them only when you need to.</li><li>Watch the time and keep answers focused.</li><li>Stay composed under challenge. It is often deliberate.</li></ul></div><div class="rwig-key"><span class="rwig-keyic"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7.5"></circle><path d="m20.5 20.5-4.2-4.2"></path></svg></span><span class="rwig-keyk">KEY</span><span class="rwig-keyt">Leave the panel clear on the value you would bring.</span></div></div></section><section class="rwig-sec" id="rwig-after-the-interview"><div class="rwig-wrap"><div class="rwig-split "><div class="rwig-col"><span class="rwig-k">05 · AFTER THE INTERVIEW</span><h2 class="rwig-h2">Maintain <span>momentum.</span></h2><p class="rwig-p">The process doesn't end when you leave the room. How you conduct yourself between stages is part of the assessment.</p></div><figure class="rwig-ph "><img src="https://cdn.jsdelivr.net/gh/automationRWR/rwr-construction-social-assets@da4a23cedd9230ab8bb647117aaf2ce364770407/interview-guide/after.jpg" alt="" loading="lazy" decoding="async" width="1400" height="933"><i class="rwig-dot"></i></figure></div><h3 class="rwig-h3"><i></i>Reflect and follow up</h3><p class="rwig-p">Note what went well, what you would refine and any questions the conversation raised for you. A brief, personalised thank-you note within 24 hours reinforces your interest, for example:</p><div class="rwig-email"><div class="rwig-emailt">"Thank you for your time today. I valued our discussion about [priority] and I am even more enthusiastic about the opportunity to contribute to [organisation]. I look forward to hearing about the next steps."</div><div class="rwig-emailf"><span>If you're working with a recruiter, copy them in.</span><button type="button" class="rwig-copy" data-copy="Thank you for your time today. I valued our discussion about [priority] and I am even more enthusiastic about the opportunity to contribute to [organisation]. I look forward to hearing about the next steps.">Copy email</button></div></div><h3 class="rwig-h3"><i></i>Manage the process</h3><p class="rwig-p">Senior appointments often take longer, with several stages, executive or board approvals and thorough reference checks. Stay close to your recruiter, raise any concerns openly and respond promptly to requests.</p><div class="rwig-tips"><span class="rwig-tag">TIPS</span><ul class="rwig-ul"><li>Brief your referees in advance on the role and the strengths it calls for. At this level, references carry significant weight.</li></ul></div><div class="rwig-flow"><div class="rwig-flowq">Have you progressed to the next stage?</div><div class="rwig-two"><div class="rwig-yes"><span class="rwig-yn">YES</span><h3>Well done.</h3><p>The next stage will go deeper. Revisit the organisation's priorities, refine your examples and prepare for sharper questions, presentations and meetings with senior stakeholders.</p></div><div class="rwig-no"><span class="rwig-yn">NO</span><h3>Not this time.</h3><p>Not every opportunity is the right fit, and how you respond now matters for your reputation and future opportunities. Read on for how to handle it well.</p></div></div></div></div></section><section class="rwig-sec" id="rwig-not-a-yes"><div class="rwig-wrap rwig-narrow"><span class="rwig-k">06 · WHEN IT'S NOT A YES</span><h2 class="rwig-h2">Leave the door <span>open.</span></h2><p class="rwig-p">At senior level, not being selected is rarely a reflection of capability. Decisions often come down to fine margins: a particular mix of experience, the dynamics of the existing team or simply timing.</p><p class="rwig-p">Respond graciously. Thank the panel for their time and let them know you would welcome future conversations. Senior networks are small, and how you handle the outcome will be remembered.</p><p class="rwig-p">Ask your recruiter for feedback. Constructive insight from the panel is valuable, and a recruiter can often obtain a more candid view than a direct request would.</p><p class="rwig-p">Preferred candidates do withdraw or accept counter-offers, so remain a strong second choice. Stay connected with the people you met and keep following the organisation's direction.</p><div class="rwig-key"><span class="rwig-keyic"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7.5"></circle><path d="m20.5 20.5-4.2-4.2"></path></svg></span><span class="rwig-keyk">KEY</span><span class="rwig-keyt">How you handle the outcome shapes your reputation.</span></div></div></section>
+<section class="rwig-sec" id="rwig-checklist"><div class="rwig-wrap rwig-narrow"><span class="rwig-k">07 · SENIOR CANDIDATE CHECKLIST</span><h2 class="rwig-h2">Your <span>checklist.</span></h2><p class="rwig-p">A senior move is a significant decision for you and for the organisation. Before your interview, make sure you can tick off the following:</p>
+ <div class="rwig-prog"><div class="rwig-progt"><b data-rwig-count>0</b> of 8 ticked</div><div class="rwig-progb"><i data-rwig-bar></i></div><button type="button" class="rwig-reset" data-rwig-reset>Clear</button></div>
+ <div class="rwig-chks" data-key="rwig-rc-checks"><label class="rwig-chk"><input type="checkbox" data-i="0"><span class="rwig-box" aria-hidden="true"></span><span class="rwig-ct">Clear on why this role, this organisation and why now.</span></label><label class="rwig-chk"><input type="checkbox" data-i="1"><span class="rwig-box" aria-hidden="true"></span><span class="rwig-ct">Researched the strategy, performance and leadership team in depth.</span></label><label class="rwig-chk"><input type="checkbox" data-i="2"><span class="rwig-box" aria-hidden="true"></span><span class="rwig-ct">Prepared five or six examples of your leadership impact, with results.</span></label><label class="rwig-chk"><input type="checkbox" data-i="3"><span class="rwig-box" aria-hidden="true"></span><span class="rwig-ct">Ready to describe your leadership style and how you build teams.</span></label><label class="rwig-chk"><input type="checkbox" data-i="4"><span class="rwig-box" aria-hidden="true"></span><span class="rwig-ct">Thought through your first 90 days and your early priorities.</span></label><label class="rwig-chk"><input type="checkbox" data-i="5"><span class="rwig-box" aria-hidden="true"></span><span class="rwig-ct">Prepared considered questions on strategy, culture and how success is measured.</span></label><label class="rwig-chk"><input type="checkbox" data-i="6"><span class="rwig-box" aria-hidden="true"></span><span class="rwig-ct">Referees briefed and available at short notice.</span></label><label class="rwig-chk"><input type="checkbox" data-i="7"><span class="rwig-box" aria-hidden="true"></span><span class="rwig-ct">Clear on your remuneration expectations and notice period.</span></label></div></div></section>
+<section class="rwig-end"><div class="rwig-wrap"><div class="rwig-endin"><div><h2>Wishing you every success <span>in your next move.</span></h2><p>There is no formula for securing a senior appointment, but thorough preparation and a clear sense of the value you bring will set you apart.</p></div>
+ <div class="rwig-acts"><a class="rwig-btnw" href="https://cdn.jsdelivr.net/gh/automationRWR/rwr-construction-social-assets@da4a23cedd9230ab8bb647117aaf2ce364770407/interview-guide/rwr-construction-senior-interview-guide.pdf" target="_blank" rel="noopener" data-rwig-dl><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"></path><path d="m7 10 5 5 5-5"></path><path d="M5 21h14"></path></svg>Download the PDF</a><a class="rwig-btnl" href="/job-alerts">Create a job alert <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m13 6 6 6-6 6"></path></svg></a><a class="rwig-btnl" href="/find-work">Find work <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m13 6 6 6-6 6"></path></svg></a></div></div></div></section>
+<script>
+(function(){
+ var root=document.getElementById('rwig'); if(!root||root.__rwig) return; root.__rwig=1;
+ function hdr(){var h=document.querySelector('#hamburger-header-container'); if(h&&h.offsetHeight&&getComputedStyle(h).position==='fixed') return h.offsetHeight+16; var f=document.querySelector('.dmHeader.fixedPart, #hcontainer.fixed'); return (f&&f.offsetHeight?f.offsetHeight:90)+16;}
+ root.addEventListener('click',function(ev){
+  var a=ev.target.closest('a[href^="#rwig-"]');
+  if(a){var t=document.getElementById(a.getAttribute('href').slice(1)); if(t){ev.preventDefault(); var y=t.getBoundingClientRect().top+window.pageYOffset-hdr(); window.scrollTo({top:y,behavior:'smooth'});} return;}
+  var d=ev.target.closest('[data-rwig-dl]');
+  if(d){try{(window.dataLayer=window.dataLayer||[]).push({event:'rwig_pdf_download',brand:root.getAttribute('data-brand')});}catch(e){} try{document.dispatchEvent(new CustomEvent('rwig:download',{detail:{brand:root.getAttribute('data-brand')}}));}catch(e){}}
+  var c=ev.target.closest('.rwig-copy');
+  if(c){var txt=c.getAttribute('data-copy'); var done=function(){c.textContent='Copied'; c.classList.add('is-done'); setTimeout(function(){c.textContent='Copy email'; c.classList.remove('is-done');},2000);};
+   try{navigator.clipboard.writeText(txt).then(done,function(){fallback();});}catch(e){fallback();}
+   function fallback(){var ta=document.createElement('textarea'); ta.value=txt; ta.style.position='fixed'; ta.style.opacity='0'; document.body.appendChild(ta); ta.select(); try{document.execCommand('copy'); done();}catch(e){} document.body.removeChild(ta);}
+  }
+ });
+ var box=root.querySelector('.rwig-chks'); if(box){
+  var key=box.getAttribute('data-key'), ins=box.querySelectorAll('input'), cnt=root.querySelector('[data-rwig-count]'), bar=root.querySelector('[data-rwig-bar]');
+  var saved=[]; try{saved=JSON.parse(localStorage.getItem(key)||'[]');}catch(e){}
+  for(var i=0;i<ins.length;i++){ if(saved.indexOf(i)>-1) ins[i].checked=true; }
+  function upd(){var on=[]; for(var i=0;i<ins.length;i++){ if(ins[i].checked) on.push(i); } cnt.textContent=on.length; bar.style.width=(on.length/ins.length*100)+'%'; try{localStorage.setItem(key,JSON.stringify(on));}catch(e){}}
+  box.addEventListener('change',upd); upd();
+  var r=root.querySelector('[data-rwig-reset]'); if(r) r.addEventListener('click',function(){for(var i=0;i<ins.length;i++) ins[i].checked=false; upd();});
+ }
+ var pills=root.querySelectorAll('.rwig-pillrow a'), secs=[];
+ for(var p=0;p<pills.length;p++){var s=document.getElementById(pills[p].getAttribute('href').slice(1)); if(s) secs.push([s,pills[p]]);}
+ var tick=false; function spy(){tick=false; var y=hdr()+40, cur=null; for(var i=0;i<secs.length;i++){ if(secs[i][0].getBoundingClientRect().top<=y) cur=secs[i][1]; } for(var j=0;j<pills.length;j++) pills[j].classList.toggle('is-on',pills[j]===cur);}
+ window.addEventListener('scroll',function(){if(!tick){tick=true; requestAnimationFrame(spy);}},{passive:true}); spy();
+})();
+</script>
+</div>
+<!-- rwig interview guide end -->
