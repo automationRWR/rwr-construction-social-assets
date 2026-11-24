@@ -1,5 +1,7 @@
 # RWR Construction social assets
 
+> **Brand guidelines:** see [BRAND-GUIDELINES.md](BRAND-GUIDELINES.md) (refreshed Nov 2026 from the live websites). The same file sits in all four brand social-assets repos and in Notion (RWR Group Brand Memory).
+
 Public asset store for RWR Construction's Instagram. Buffer pulls media straight from the raw URLs in this repo, so don't rename, move or delete files while posts that use them are scheduled.
 
 Raw URL pattern: `https://raw.githubusercontent.com/automationRWR/rwr-construction-social-assets/main/<path>`
